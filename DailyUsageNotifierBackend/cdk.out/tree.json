@@ -1,0 +1,440 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.150.0"
+        }
+      },
+      "DailyUsageNotifierBackendStack": {
+        "id": "DailyUsageNotifierBackendStack",
+        "path": "DailyUsageNotifierBackendStack",
+        "children": {
+          "DailyNotification-Topic": {
+            "id": "DailyNotification-Topic",
+            "path": "DailyUsageNotifierBackendStack/DailyNotification-Topic",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "DailyUsageNotifierBackendStack/DailyNotification-Topic/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SNS::Topic",
+                  "aws:cdk:cloudformation:props": {}
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-sns.CfnTopic",
+                  "version": "1.150.0"
+                }
+              },
+              "+14697661066": {
+                "id": "+14697661066",
+                "path": "DailyUsageNotifierBackendStack/DailyNotification-Topic/+14697661066",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "DailyUsageNotifierBackendStack/DailyNotification-Topic/+14697661066/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SNS::Subscription",
+                      "aws:cdk:cloudformation:props": {
+                        "protocol": "sms",
+                        "topicArn": {
+                          "Ref": "DailyNotificationTopic1A949728"
+                        },
+                        "endpoint": "+14697661066"
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-sns.CfnSubscription",
+                      "version": "1.150.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-sns.Subscription",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-sns.Topic",
+              "version": "1.150.0"
+            }
+          },
+          "DailyUsageNotifier": {
+            "id": "DailyUsageNotifier",
+            "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.CfnRole",
+                      "version": "1.150.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sns:Publish",
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Ref": "DailyNotificationTopic1A949728"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "DailyUsageNotifierServiceRoleDefaultPolicyC0AFA876",
+                            "roles": [
+                              {
+                                "Ref": "DailyUsageNotifierServiceRole9EBD90F4"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                          "version": "1.150.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-iam.Policy",
+                      "version": "1.150.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.Role",
+                  "version": "1.150.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.AssetStaging",
+                      "version": "1.150.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/Code/AssetBucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.BucketBase",
+                      "version": "1.150.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                  "version": "1.150.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": {
+                        "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3BucketB4DE63A2"
+                      },
+                      "s3Key": {
+                        "Fn::Join": [
+                          "",
+                          [
+                            {
+                              "Fn::Select": [
+                                0,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Fn::Select": [
+                                1,
+                                {
+                                  "Fn::Split": [
+                                    "||",
+                                    {
+                                      "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      }
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "DailyUsageNotifierServiceRole9EBD90F4",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "SNS_TOPIC_ARN": {
+                          "Ref": "DailyNotificationTopic1A949728"
+                        },
+                        "REGION": "us-east-1"
+                      }
+                    },
+                    "handler": "main.handler",
+                    "memorySize": 1024,
+                    "runtime": "nodejs14.x",
+                    "timeout": 60
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnFunction",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-lambda.Function",
+              "version": "1.150.0"
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "DailyUsageNotifierBackendStack/AssetParameters",
+            "children": {
+              "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0": {
+                "id": "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
+                "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.150.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.150.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.150.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.150.0"
+            }
+          },
+          "ce-policy": {
+            "id": "ce-policy",
+            "path": "DailyUsageNotifierBackendStack/ce-policy",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "DailyUsageNotifierBackendStack/ce-policy/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                  "aws:cdk:cloudformation:props": {
+                    "policyDocument": {
+                      "Statement": [
+                        {
+                          "Action": "ce:*",
+                          "Effect": "Allow",
+                          "Resource": "*"
+                        }
+                      ],
+                      "Version": "2012-10-17"
+                    },
+                    "policyName": "cepolicy3A0A32C3",
+                    "roles": [
+                      {
+                        "Ref": "DailyUsageNotifierServiceRole9EBD90F4"
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-iam.CfnPolicy",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-iam.Policy",
+              "version": "1.150.0"
+            }
+          },
+          "DailyUsageNotifierScheduleRule": {
+            "id": "DailyUsageNotifierScheduleRule",
+            "path": "DailyUsageNotifierBackendStack/DailyUsageNotifierScheduleRule",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "DailyUsageNotifierBackendStack/DailyUsageNotifierScheduleRule/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Events::Rule",
+                  "aws:cdk:cloudformation:props": {
+                    "scheduleExpression": "cron(0 13 ? * MON-FRI *)",
+                    "state": "ENABLED",
+                    "targets": [
+                      {
+                        "id": "Target0",
+                        "arn": {
+                          "Fn::GetAtt": [
+                            "DailyUsageNotifier58F8B47C",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-events.CfnRule",
+                  "version": "1.150.0"
+                }
+              },
+              "AllowEventRuleDailyUsageNotifierBackendStackDailyUsageNotifierC1D5AA17": {
+                "id": "AllowEventRuleDailyUsageNotifierBackendStackDailyUsageNotifierC1D5AA17",
+                "path": "DailyUsageNotifierBackendStack/DailyUsageNotifierScheduleRule/AllowEventRuleDailyUsageNotifierBackendStackDailyUsageNotifierC1D5AA17",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                  "aws:cdk:cloudformation:props": {
+                    "action": "lambda:InvokeFunction",
+                    "functionName": {
+                      "Fn::GetAtt": [
+                        "DailyUsageNotifier58F8B47C",
+                        "Arn"
+                      ]
+                    },
+                    "principal": "events.amazonaws.com",
+                    "sourceArn": {
+                      "Fn::GetAtt": [
+                        "DailyUsageNotifierScheduleRuleBDA4AEFB",
+                        "Arn"
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-lambda.CfnPermission",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-events.Rule",
+              "version": "1.150.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "DailyUsageNotifierBackendStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "DailyUsageNotifierBackendStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.150.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.150.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.150.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.150.0"
+    }
+  }
+}
