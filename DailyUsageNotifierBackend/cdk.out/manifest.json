@@ -19,13 +19,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
-              "id": "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
+              "path": "asset.e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
+              "id": "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
               "packaging": "zip",
-              "sourceHash": "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
-              "s3BucketParameter": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3BucketB4DE63A2",
-              "s3KeyParameter": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B",
-              "artifactHashParameter": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0ArtifactHash5BE57C20"
+              "sourceHash": "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
+              "s3BucketParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501",
+              "s3KeyParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E",
+              "artifactHashParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83ArtifactHash0C749B05"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/construct-compat.js:352:62)",
@@ -140,10 +140,10 @@
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3Bucket": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3BucketB4DE63A2",
+            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",
@@ -166,10 +166,10 @@
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3VersionKey": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B",
+            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",
@@ -192,10 +192,10 @@
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/ArtifactHash": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0ArtifactHash5BE57C20",
+            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83ArtifactHash0C749B05",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",

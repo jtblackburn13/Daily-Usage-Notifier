@@ -194,7 +194,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3BucketB4DE63A2"
+                        "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -207,7 +207,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B"
+                                      "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E"
                                     }
                                   ]
                                 }
@@ -220,7 +220,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0S3VersionKey1F1D417B"
+                                      "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E"
                                     }
                                   ]
                                 }
@@ -265,13 +265,13 @@
             "id": "AssetParameters",
             "path": "DailyUsageNotifierBackendStack/AssetParameters",
             "children": {
-              "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0": {
-                "id": "4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
-                "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0",
+              "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83": {
+                "id": "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
+                "path": "DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3Bucket",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.150.0"
@@ -279,7 +279,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/S3VersionKey",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.150.0"
@@ -287,7 +287,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "DailyUsageNotifierBackendStack/AssetParameters/4b58848fef13121541956d2675ea4c99fa2728c78aaa1af33b4981ff888dd9a0/ArtifactHash",
+                    "path": "DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.150.0"

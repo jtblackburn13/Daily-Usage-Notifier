@@ -11,7 +11,12 @@ async function getCurrentMonthUsage(){
 
         var date = new Date();
         var StartDate = moment().startOf('month').format('YYYY-MM-DD');
-        var EndDate = moment(date).add(1, "d").format('YYYY-MM-DD');
+        let EndDate = moment(date).format('YYYY-MM-DD');
+
+        if(StartDate == StartDate){
+            EndDate = moment(date).add(1, "d").format('YYYY-MM-DD');
+        }
+
         console.log('StartDate ' + StartDate);
         console.log('EndDate ' + EndDate);
 
