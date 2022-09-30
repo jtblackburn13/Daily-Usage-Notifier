@@ -84,7 +84,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501"
+            "Ref": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3BucketE7742107"
           },
           "S3Key": {
             "Fn::Join": [
@@ -97,7 +97,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E"
+                          "Ref": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3VersionKeyC0703631"
                         }
                       ]
                     }
@@ -110,7 +110,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E"
+                          "Ref": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3VersionKeyC0703631"
                         }
                       ]
                     }
@@ -145,7 +145,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "DailyUsageNotifierBackendStack/DailyUsageNotifier/Resource",
-        "aws:asset:path": "asset.e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
+        "aws:asset:path": "asset.1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8",
         "aws:asset:is-bundled": false,
         "aws:asset:property": "Code"
       }
@@ -220,7 +220,7 @@
     "CDKMetadata": {
       "Type": "AWS::CDK::Metadata",
       "Properties": {
-        "Analytics": "v2:deflate64:H4sIAAAAAAAA/01PQY7CMAx8C/fUUBDiugsS56rwgeB6kWmToDgBoSh/3ybsSpxmxjMa2y202xWsFl/6KQ0O4zKh8wTpFDSO6luEwkyvbK/q4KwEHzGow4/ttNeGAvkiehIXPVJWpSWJFUhnd2cs5puc4kXQ8z2ws2X6qbOatLkMGtIxWvxPfPKOvGGRmmVtIPVuorq5YOcmxlfNVZaVbBpdTheoH8wa9hFHCnstpOhBdrZSH/9KZsw5K+sGgpssH+0OdrBe3IS58dEGNgT9G38B7Zrh6TABAAA="
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/01Qy27CMBD8lt6dhagq6rEFiXMU+gNms0VLYht5bSpk+d9rG5A4zczOaF899B9rWL996T/pcJpXCZ0nSIegcVbfIhQKPbE9qZ2zEnzEoHa/dtBeGwrkqxhJXPRIWdUuSaxA+nEXxmreySEeBT1fAjtbq686q0Wb46Qh7aPFZ+KVD+QNi7QsawNpdAu1yRUHtzDeWq6xrOS903V1gXZB0bCNOFPYaiFFV7LFSmN8NCmYc1bWTQRnWV37T9iUn5yFufPRBjYE4x3/AdBgfsswAQAA"
       },
       "Metadata": {
         "aws:cdk:path": "DailyUsageNotifierBackendStack/CDKMetadata/Default"
@@ -228,17 +228,17 @@
     }
   },
   "Parameters": {
-    "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501": {
+    "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3BucketE7742107": {
       "Type": "String",
-      "Description": "S3 bucket for asset \"e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83\""
+      "Description": "S3 bucket for asset \"1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8\""
     },
-    "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E": {
+    "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3VersionKeyC0703631": {
       "Type": "String",
-      "Description": "S3 key for asset version \"e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83\""
+      "Description": "S3 key for asset version \"1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8\""
     },
-    "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83ArtifactHash0C749B05": {
+    "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8ArtifactHash189E82E5": {
       "Type": "String",
-      "Description": "Artifact hash for asset \"e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83\""
+      "Description": "Artifact hash for asset \"1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8\""
     }
   }
 }

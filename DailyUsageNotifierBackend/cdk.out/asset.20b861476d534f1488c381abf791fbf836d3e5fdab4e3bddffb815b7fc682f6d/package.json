@@ -1,0 +1,19 @@
+{
+  "name": "lambda-fn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Blackburn",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.58.0",
+    "@google-analytics/data": "^3.0.3",
+    "aws-sdk": "^2.1104.0",
+    "googleapis": "^108.0.0",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.2"
+  }
+}

@@ -19,13 +19,13 @@
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
-              "id": "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
+              "path": "asset.1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8",
+              "id": "1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8",
               "packaging": "zip",
-              "sourceHash": "e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83",
-              "s3BucketParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501",
-              "s3KeyParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E",
-              "artifactHashParameter": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83ArtifactHash0C749B05"
+              "sourceHash": "1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8",
+              "s3BucketParameter": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3BucketE7742107",
+              "s3KeyParameter": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3VersionKeyC0703631",
+              "artifactHashParameter": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8ArtifactHash189E82E5"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/construct-compat.js:352:62)",
@@ -40,11 +40,11 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:100:33)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -57,11 +57,11 @@
               "new Topic (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-sns/lib/topic.js:35:26)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:15:36)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -75,11 +75,11 @@
               "Topic.addSubscription (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:31:9)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:30:28)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -93,11 +93,11 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:82:35)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -109,16 +109,16 @@
             "trace": [
               "new Policy (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/policy.js:50:26)",
               "Role.addToPrincipalPolicy (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/role.js:199:34)",
-              "Function.addToPrincipal (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/grant.js:87:65)",
-              "Function.addToPrincipalOrResource (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/grant.js:43:30)",
+              "Grant.addToPrincipal (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/grant.js:87:65)",
+              "Grant.addToPrincipalOrResource (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/grant.js:43:30)",
               "Topic.grantPublish (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-sns/lib/topic-base.js:63:26)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:29:28)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -131,19 +131,19 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:154:26)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3Bucket": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3BucketC4260501",
+            "data": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3BucketE7742107",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",
@@ -157,19 +157,19 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:100:33)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/S3VersionKey": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83S3VersionKey2B74556E",
+            "data": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8S3VersionKeyC0703631",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",
@@ -183,19 +183,19 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:100:33)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
         ],
-        "/DailyUsageNotifierBackendStack/AssetParameters/e5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83/ArtifactHash": [
+        "/DailyUsageNotifierBackendStack/AssetParameters/1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameterse5ea78eb4b3fa2b36270ef9ad742a378f998c1df81ad2d41e704ae8273785c83ArtifactHash0C749B05",
+            "data": "AssetParameters1abe5e5ec91137cd0a87e79cfc237fada73064262edfe84ed8f6275e9c4930d8ArtifactHash189E82E5",
             "trace": [
               "new FileAssetParameters (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:157:22)",
@@ -209,11 +209,11 @@
               "new Function (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-lambda/lib/function.js:100:33)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:17:32)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -226,11 +226,11 @@
               "new Policy (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-iam/lib/policy.js:50:26)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:40:7)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -243,11 +243,11 @@
               "new Rule (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-events/lib/rule.js:36:26)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:45:23)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -263,11 +263,11 @@
               "Rule.addTarget (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/aws-events/lib/rule.js:88:36)",
               "new DailyUsageNotifierBackendStack (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/lib/daily_usage_notifier_backend-stack.js:48:15)",
               "Object.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/bin/daily_usage_notifier_backend.js:7:1)",
-              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
-              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
-              "Module.load (node:internal/modules/cjs/loader:975:32)",
-              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
-              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
               "node:internal/main/run_main_module:17:47"
             ]
           }
@@ -285,8 +285,8 @@
               "Object.synthesize (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
               "App.synth (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/stage.js:89:41)",
               "process.<anonymous> (/Users/tylerblackburn/projects/Daily-Usage-Notifier/DailyUsageNotifierBackend/node_modules/@aws-cdk/core/lib/app.js:51:51)",
-              "Object.onceWrapper (node:events:642:26)",
-              "process.emit (node:events:527:28)"
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)"
             ]
           }
         ]

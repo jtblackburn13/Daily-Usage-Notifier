@@ -1,6 +1,7 @@
 const {getCurrentMonthUsage} = require('./aws/costExplorer');
 const {publishToTopic} = require('./aws/sns');
 
+const {getHighFlyOpsDailyMetrics} = require('./google/analytics');
 
 
 async function sendDailyNotification(){
@@ -12,9 +13,14 @@ async function sendDailyNotification(){
             return
         }
 
+        // get usage update by querying Cost Explorer
+        let hfoMetricsResponse = await getHighFlyOpsDailyMetrics()
+        if(!hfoMetricsResponse.successful){
+            return
+        }
 
         // compile text message
-        let textMessage = `${usageUpdateResponse.usageUpdate}`
+        let textMessage = `${usageUpdateResponse.usageUpdate} \n\n ${hfoMetricsResponse.dailyMetrics}`
         console.log(textMessage)
 
         await publishToTopic(textMessage)
